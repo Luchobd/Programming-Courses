@@ -45,4 +45,4 @@ app.*.map.json
 /android/app/release
 
 # GitHub Repositories
-/assets/
+/assets/videos
