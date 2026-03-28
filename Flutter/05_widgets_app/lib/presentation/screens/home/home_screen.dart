@@ -67,10 +67,10 @@ class _CustomListTitle extends StatelessWidget {
 
         // * Navegar a otra pantalla usando push. "Recomendado para apps grandes !!!".
         // push => Añade una nueva ruta a la pila de navegación. Se puede "ir y volver".
-        // context.push(menuItem.link);
+        context.push(menuItem.link);
 
-        // * Navegar a otra pantalla usando pushNamed. "Recomendado para apps grandes !!!".
-        context.pushNamed(CardsScreen.name);
+        // * Navegar a otra pantalla usando pushNamed. "Solo aplica para la re-dirección de una pantalla por nombre".
+        // context.pushNamed(menuItem.link);
       },
     );
   }
