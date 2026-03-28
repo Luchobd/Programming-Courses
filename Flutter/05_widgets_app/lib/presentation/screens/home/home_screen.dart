@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 // import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
 
 // Pantalla principal de la aplicación. Creación y utilización de ListView.builder y ListTile.
 class HomeScreen extends StatelessWidget {
+
+  static const String name = 'home_screen';
+
   const HomeScreen({super.key});
 
   @override
@@ -63,7 +67,10 @@ class _CustomListTitle extends StatelessWidget {
 
         // * Navegar a otra pantalla usando push. "Recomendado para apps grandes !!!".
         // push => Añade una nueva ruta a la pila de navegación. Se puede "ir y volver".
-        context.push(menuItem.link);
+        // context.push(menuItem.link);
+
+        // * Navegar a otra pantalla usando pushNamed. "Recomendado para apps grandes !!!".
+        context.pushNamed(CardsScreen.name);
       },
     );
   }
