@@ -16,6 +16,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // MaterialApp.router es la forma recomendada para manejar las rutas de la aplicación.
     return MaterialApp.router(
+      title: 'Flutter Widgets',
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
       theme: AppTheme(selectedColor: 2).getTheme(),
